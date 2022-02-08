@@ -12,19 +12,13 @@ import java.io.InputStreamReader;
 public class Main {
     //bufferedReader 和 inputstream的转接
     public static void main(String[] args) throws Exception {
-//        FileInputStream fis = new FileInputStream("D:/2904.txt");
-//        InputStreamReader isr = new InputStreamReader(fis);
-//        BufferedReader br = new BufferedReader(isr);
-//        String line = br.readLine();
-//        while (line!=null&&!line.equals("")){
-//            System.out.println(line);
-//        }
-//        br.close();
-        test1();
-    }
-
-    private static void test1() {
-        System.out.println("111");
-
+        FileInputStream fis = new FileInputStream("D:/2904.txt");
+        InputStreamReader isr = new InputStreamReader(fis);
+        BufferedReader br = new BufferedReader(isr);
+        String line = br.readLine();
+        while (line!=null&&!line.equals("")){
+            System.out.println(line);
+        }
+        br.close();
     }
 }
